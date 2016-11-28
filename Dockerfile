@@ -1,7 +1,6 @@
 FROM java:8-jdk
-MAINTAINER Dave Henderson <dhenderson@gmail.com>
-
-ARG GRADLE_VERSION=2.6
+MAINTAINER Jan Mares <jan.mares@dtforce.com>
+ARG GRADLE_VERSION=3.2.1
 
 WORKDIR /usr/bin
 RUN curl -sLO https://services.gradle.org/distributions/gradle-${GRADLE_VERSION}-all.zip && \
